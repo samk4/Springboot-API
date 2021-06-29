@@ -29,6 +29,6 @@ public class StudentController {
 	public String insertStudent(@RequestBody Student student) {
 		
 		Student insertedStudent = studentRepo.insert(student);
-		return "Student created!"+insertedStudent.getName();
+		return "Student "+insertedStudent.getName()+" created!";
 	}
 }
